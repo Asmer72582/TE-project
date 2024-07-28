@@ -1,0 +1,112 @@
+.form-container{
+    box-shadow:0px 0px 15px 10px rgb(243, 236, 236);
+    box-sizing: border-box;
+    width:580px;
+    height:650px;
+    padding-left: 20px;
+    padding-right:10px;
+    border-radius:20px;
+    position:absolute;
+    top:20px;
+    left:470px;
+}
+.container-1{
+    font-size:50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.gap-container{
+    line-height:3px;
+}
+body{
+    position:relative;
+}
+.common-container{
+    text-indent:5px;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 16px;
+}
+.common-container-1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent:5px;
+    margin-top: 16px;
+}
+.btn-1{
+    display:block;
+    width:540px;
+    height:40px;
+    color:black;
+    font-family: Arial;
+    font-size:28px;
+    border:2px thick;
+    background-color:rgb(249, 249, 249);
+    font-weight: bolder;
+}
+.btn-1-text{
+ position: absolute;
+ top:605px;
+ right:95px;
+}
+.btn-1:hover{
+    cursor:pointer;
+     color:white;
+     background-color: black;
+}
+.btn-2{
+    position:absolute;
+    display:inline-block;
+    padding:5px 5px 5px 5px;
+    background-color: rgb(4, 4, 252);
+    color:white;
+    font-family: Arial;
+    font-size:20px;
+    border-radius: 10px;
+    border-color:white;
+    box-shadow:0px 0px 0px 0px blue;
+    margin-left:15px;
+    position:absolute;
+    bottom:20px;
+    right:17px;
+}
+#input-1{
+    display:inline-block;
+    margin-left:68px;
+    padding-left: 10px;
+}
+#input-2{
+    display:inline-block;
+    margin-left:46px;
+    padding-left: 10px;
+}
+#role-input{
+    display:inline-block;
+    margin-left:78px;
+}
+#input-4{
+    display:inline;
+    padding-left:40px;
+}
+#input-5{
+    display:inline-block;
+}
+#input-6{
+    padding-left:10px;
+    margin-left:32px;
+}
+.gap-1{
+    line-height:3px;
+}
+#input-1::placeholder{
+   font-size: 16px;
+}
+#input-2::placeholder{
+   font-size:16px;
+}
+#input-3::placeholder{
+   font-size: 16px;
+}
+#input-6::placeholder{
+   font-size: 16px;
+}

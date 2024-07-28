@@ -1,0 +1,282 @@
+.header-box {
+    display: block;
+    padding-top: 5px;
+    /* padding-left: 6px; */
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    height: 60px;
+    /* border: 1px solid red; */
+    width: 80%;
+    text-align: center;
+    float: right;
+    box-shadow: 0px 0px 10px 10px rgb(244, 242, 242);
+}
+
+.heading {
+
+    width: 100%;
+    /* font-family: Great Vibes, cursive, sans-serif; */
+    font-weight: bold;
+}
+
+.proposal-container {
+    /* position:absolute; */
+    /* left:-7%; */
+    /* border: 1px solid red; */
+    /* margin: 50px; */
+    /* height: 100px; */
+    position: absolute;
+    left: 21.5%;
+    top: 11vh;
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    /* width: 100%; */
+    border-radius: 5px;
+}
+
+.proposal-container input,
+textarea {
+    padding: 10px;
+    width: 100%;
+    resize: none;
+}
+
+.proposal-container p {
+    font-weight: 800;
+}
+
+.proposal-2-heading {
+    text-align: center;
+    font-weight: 900;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 5px;
+}
+
+.btn {
+    background-color: #198753;
+    color: #fff;
+}
+
+/* .proposal-1 {
+    position: absolute;
+    left: 20px;
+    top: 90px;
+    padding-left: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 420px;
+    height: 545px;
+    border-color: black;
+    box-shadow: 0px 0px 10px 5px rgb(234, 230, 230);
+} */
+
+.proposal-1-heading {
+    font-size: 25px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+.proposal-1-name {
+    font-size: 18px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+/* .proposal-1-input-1 {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+} */
+
+.proposal-1-description {
+    font-size: 18px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+/* .proposal-1-input-2 {
+    display: block;
+    border: solid 2px;
+    resize: none;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+} */
+
+/* .proposal-1-domain {
+    font-size: 18px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+} */
+
+/* .proposal-1-input-3 {
+    display: block;
+    border: solid 2px;
+    resize: none;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.proposal-2 {
+    position: absolute;
+    left: 493px;
+    top: 90px;
+    padding-left: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 420px;
+    height: 545px;
+    border-color: black;
+    box-shadow: 0px 0px 10px 5px rgb(234, 230, 230);
+}
+
+.proposal-2-heading {
+    font-size: 25px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+.proposal-2-name {
+    font-size: 18px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+.proposal-2-input-1 {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.proposal-2-description {
+    font-size: 18px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+.proposal-2-input-2 {
+    display: block;
+    border: solid 2px;
+    resize: none;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.proposal-2-domain {
+    font-size: 18px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+.proposal-2-input-3 {
+    display: block;
+    border: solid 2px;
+    resize: none;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.proposal-3 {
+    position: absolute;
+    left: 966px;
+    top: 90px;
+    padding-left: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 420px;
+    height: 545px;
+    border-color: black;
+    box-shadow: 0px 0px 10px 5px rgb(234, 230, 230);
+}
+
+.proposal-3-heading {
+    font-size: 25px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+.proposal-3-name {
+    font-size: 18px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+.proposal-3-input-1 {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.proposal-3-description {
+    font-size: 18px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+.proposal-3-input-2 {
+    display: block;
+    border: solid 2px;
+    resize: none;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.proposal-3-domain {
+    font-size: 18px;
+    font-family: Arial, sans-serif, Seoge UI;
+    font-weight: bold;
+}
+
+.proposal-3-input-3 {
+    display: block;
+    border: solid 2px;
+    resize: none;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.line-height {
+    line-height: 0.3;
+}
+
+.proposals-submit-btn {
+    position: absolute;
+    display: block;
+    top: 653px;
+    left: 655px;
+    color: black;
+    background-color: whitesmoke;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+.proposals-submit-btn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+} */

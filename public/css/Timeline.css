@@ -1,0 +1,26 @@
+body {
+    position: relative;
+}
+
+#timeline {
+    position: absolute;
+    left: 102px;
+    top: 50px;
+}
+
+.back-btn {
+    display: block;
+    position: absolute;
+    left: 740px;
+    bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.back-btn:hover {
+    color: white;
+    background-color: black;
+}

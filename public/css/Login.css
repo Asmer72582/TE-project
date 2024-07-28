@@ -1,0 +1,166 @@
+.form-container {
+    box-shadow: 0px 0px 15px 600px rgba(40, 37, 37, 0.507);
+    box-sizing: border-box;
+    width: 560px;
+    /* height: 580px; */
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 15px;
+
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/902m55nw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.common-container {
+    display: inline-block;
+    /* font-size: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.common-container b {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.common-container input,
+select {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #d9d9d9;
+}
+
+.btn-submit {
+    padding: 10px;
+    width: 100%;
+    background-color: #d9d9d9;
+    border: none;
+}
+
+.btn-submit:hover {
+    background-color: #e9e9e9;
+}
+
+.login_links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_links a {
+    text-transform: uppercase;
+}
+
+/* 
+
+.form-header {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    left: 190px;
+}
+
+body {
+    position: relative;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.common-container {
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 60px;
+    margin-top: 170px;
+}
+
+.common-container {
+    margin-top: 25px;
+}
+
+.fields-container {
+    margin-top: 90px;
+}
+
+#field-1 {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+#field-2 {
+    padding-left: 7px;
+    margin-left: 6px;
+}
+
+#field-3 {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 2px;
+    padding-left: 7px;
+}
+
+#field-1::placeholder {
+    font-size: 16px;
+}
+
+#field-2::placeholder {
+    font-size: 16px;
+}
+
+#field-3::placeholder {
+    font-size: 16px;
+}
+
+.btn-submit {
+    position: absolute;
+    bottom: 55px;
+    display: block;
+    border: 2px thick;
+    background-color: rgb(249, 249, 249);
+    font-weight: bolder;
+    position: absolute;
+    width: 520px;
+    height: 40px;
+    font-size: 25px;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.forgot-password {
+    position: absolute;
+    top: 540px;
+    right: 19px;
+    text-decoration: none;
+    color: rgb(100, 100, 239);
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 5px rgb(0, 191, 255);
+}
+
+#role-input {
+    display: inline-block;
+    margin-left: 55px;
+} */
