@@ -32,6 +32,11 @@ Route::get('/testroute', function () {
 });
 
 
+Route::get('/chat', 'App\Http\Controllers\PusherController@index');
+Route::post('/chat/broadcast', 'App\Http\Controllers\PusherController@broadcast');
+Route::post('/chat/receive', 'App\Http\Controllers\PusherController@receive');
+
+
 Route::get('/dashboard', function () {
 
     if (Auth::user()->user_type == "student") {

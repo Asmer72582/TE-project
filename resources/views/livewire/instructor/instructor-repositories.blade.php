@@ -10,15 +10,13 @@
 
     <body>
         <div class="header-box">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                class="navigation-icon" onclick="TabDisplay(event)">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+       
             <span class="heading">REPOSITORIES</span>
 
-            @include('nav.instructor-nav')
+        
 
         </div>
+        @include('nav.instructor-nav')
 
         <style>
             .repositories {
@@ -31,8 +29,9 @@
             }
 
             .repo-header {
-                background: whitesmoke;
+                background-color: #198753;
                 padding: 20px;
+                margin-left: 50px;
                 position: relative;
                 box-shadow: 0px 0px 5px black;
             }
@@ -44,9 +43,24 @@
                 position: relative;
                 z-index: 100;
             }
+            .upload-section{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                /* padding: 10px 0px; */
+
+
+            }
+            .upload-section form, .create-folder-section{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+            }
 
             .create-folder-section input {
-                padding: 10px;
+                padding: 15px;
+                width: 100%;
             }
 
             .create-folder-section button,
@@ -67,13 +81,16 @@
                 width: 100%;
                 /* background:red; */
                 padding: 40px;
-                /* display: flex; */
-                max-width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                /* max-width: 100%; */
+
             }
 
             .repo-file {
                 height: 230px;
-                width: 10%;
+                width: 15%;
+
                 align-content: center;
                 justify-content: center;
                 text-align: center;
@@ -85,6 +102,10 @@
                 transition: 0.2s ease-in-out;
             }
 
+            .file-name{
+                height: 20px;
+                overflow: hidden;
+            }
             .repo-file:hover {
                 transform: scale(1.05);
             }

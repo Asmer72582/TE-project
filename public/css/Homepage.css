@@ -20,9 +20,13 @@ body {
 }
 
 .dashboardPannel {
+    position: relative;
+    /* left: 1000px; */
+    width: 90%;
     display: flex;
     justify-content: end;
     gap: 30px;
+    /* border: 1px solid red; */
     margin-right: 50px;
 }
 

@@ -102,8 +102,8 @@
             }
 
             .file-name{
-height: 20px;
-overflow: hidden;
+                height: 20px;
+                overflow: hidden;
             }
             .repo-file:hover {
                 transform: scale(1.05);

@@ -10,15 +10,13 @@
 
     <body>
         <div class="header-box">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                class="navigation-icon" onclick="TabDisplay(event)">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+          
             <span class="heading">TASK REPOSITORY</span>
 
-            @include('nav.instructor-nav')
+         
 
         </div>
+        @include('nav.instructor-nav')
 
         <style>
             .repositories {
@@ -31,8 +29,9 @@
             }
 
             .repo-header {
-                background: whitesmoke;
+                background-color: #198753;
                 padding: 20px;
+                margin-left: 50px;
                 position: relative;
                 box-shadow: 0px 0px 5px black;
             }
@@ -44,16 +43,30 @@
                 position: relative;
                 z-index: 100;
             }
+            .upload-section{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                /* padding: 10px 0px; */
+
+
+            }
+            .upload-section form, .create-folder-section{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+            }
 
             .create-folder-section input {
-                padding: 10px;
+                padding: 15px;
             }
 
             .create-folder-section button,
             .upload-file-section input[type="submit"] {
                 color: white;
                 background: black;
-                padding: 10px;
+                /* padding: 10px; */
                 outline: none;
             }
 
@@ -67,13 +80,16 @@
                 width: 100%;
                 /* background:red; */
                 padding: 40px;
-                /* display: flex; */
-                max-width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                /* max-width: 100%; */
+
             }
 
             .repo-file {
                 height: 230px;
-                width: 10%;
+                width: 15%;
+
                 align-content: center;
                 justify-content: center;
                 text-align: center;
@@ -85,6 +101,10 @@
                 transition: 0.2s ease-in-out;
             }
 
+            .file-name{
+                height: 20px;
+                overflow: hidden;
+            }
             .repo-file:hover {
                 transform: scale(1.05);
             }
@@ -113,25 +133,26 @@
                 <div class="upload-section">
 
                     <div class="create-folder-section">
-                        <input type="text" name="" wire:model="folder_name" id="folder_name"
+                        <input type="text" name="" class="form-control" wire:model="folder_name" id="folder_name"
                             placeholder="Folder Name.." id="" required>
-                        <button wire:click="create_folder">Create Folder</button>
+                        <button wire:click="create_folder" class="btn">Create Folder</button>
                     </div>
 
-                    <form wire:submit.prevent="uploadFile" enctype="multipart/form-data" class="upload-file-section">
-                        <input type="file" name="" wire:model="files" multiple id="" required>
-                        <input type="submit" value="Upload" class="upload-btn">
-                    </form>
+                    <div>
+                        <form wire:submit.prevent="uploadFile" enctype="multipart/form-data" class="upload-file-section">
+                            <input type="file" name="" wire:model="files" class="form-control" multiple id="" required>
+                            <input type="submit" value="Upload" class="upload-btn btn">
+                        </form>
+                    </div>
                 </div>
             </div>
 
-
             <br>
 
-            @if ($current_folder !== null)
+            {{-- @if ($current_folder !== null)
                 <button style="padding:10px; background:black; color:white; z-index:100; cursor:pointer;"
                     wire:click="goBackFolder" wire:loading.attr="disabled">Go Back</button>
-            @endif
+            @endif --}}
 
             <div class="repo-content">
 

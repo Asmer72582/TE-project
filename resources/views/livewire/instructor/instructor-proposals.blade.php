@@ -5,29 +5,28 @@
 
     <head>
         <link rel="stylesheet" href="{{ asset('css/Tasks.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/Homepage.css') }}">
         <script src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
 
     <body>
         <div class="header-box">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                class="navigation-icon" onclick="TabDisplay(event)">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+         
             <span class="heading">PROPOSALS</span>
 
-            @include('nav.instructor-nav')
+         
 
 
         </div>
+        @include('nav.instructor-nav')
 
         <style>
             table {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 position: absolute;
                 left: 25.5%;
-                top: 3.2vh;
-                width: 60%;
+                top: 10%;
+                width: 70%;
                 box-shadow: 0px 0px 10px gray;
             }
 

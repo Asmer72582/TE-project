@@ -9,14 +9,12 @@
 
     <body>
         <div class="header-box">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                class="navigation-icon" onclick="TabDisplay(event)">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+   
             <span class="heading">NOTIFICATIONS</span>
 
-            @include('nav.instructor-nav')
         </div>
+
+        @include('nav.instructor-nav')
 
         <style>
             .notification-container {
@@ -31,7 +29,11 @@
             }
 
             .notifications {
-                background: -webkit-linear-gradient(right, rgb(242, 26, 242), rgba(94, 94, 242));
+                background-color: #198754;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 200px;
                 box-shadow: 0px 0px 10px black;
                 padding: 20px;
                 margin-top: 20px;
@@ -42,19 +44,19 @@
                 line-height: 40px;
             }
 
-
-
             .created_at {
                 text-align: right;
             }
 
             .repositories {
-                width: 75%;
+                width: 70%;
                 height: auto;
                 position: relative;
-                left: 20%;
+                left: 25%;
                 padding: 20px;
+                background-color: #198754;
                 overflow: hidden;
+
             }
 
             .repo-header {
@@ -70,10 +72,12 @@
                 float: left;
                 position: relative;
                 z-index: 100;
+
             }
 
             .create-folder-section input {
                 padding: 10px;
+                
             }
 
             .create-folder-section button,
@@ -107,18 +111,18 @@
 
             <div class="repo-header">
 
-                <div class="upload-section">
+                <form class="upload-section">
 
                     <div class="create-folder-section">
+
                         <input type="text" name="" wire:model="notification_title" id="Notifiation Title"
                             placeholder="Notification title.." id="" required>
                         </div>
                         <textarea name="" placeholder="Notification Message" wire:model="notification_message"  id="" cols="30" rows="2"></textarea>
                         <button wire:click="create_notification" class="create_folder">Send Notification</button>
 
+                </form>
 
-                    </form>
-                </div>
             </div>
         </div>
 

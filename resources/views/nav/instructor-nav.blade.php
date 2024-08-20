@@ -1,9 +1,27 @@
 <style>
-    .navigation-tab{
-        overflow: hidden;
+    body{
+        margin: 0px;
+        padding: 0px;
     }
     a{
         text-decoration: none;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+    .navigation-tab{
+        position: fixed;
+        width: 350px;
+        /* overflow-y: scroll; */
+
+        height: 100%;
+        margin: 0px;
+        top: 0px;
+    }
+    .nav-6,.nav-2,.nav-3, .nav-5, .nav-7, .nav-4{
+padding: 5px;
+width: 100%;
     }
 </style>
 
