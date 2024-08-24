@@ -33,9 +33,18 @@ class StudentRepositories extends Component
 
     public function DownloadFile($file_id)
     {
-        $file = Repositories::where('sub_ff_of', $file_id)->get();
-        $counter = 0;
-        $filenames = "";
+        $file = Repositories::where([['ff_id', $file_id]])->first();
+        $filePath = storage_path('app/' . $file->file_path);
+        if (File::exists($filePath)) {
+            return response()->download($filePath, $file->ff_title);
+        }
+
+    
+
+        abort(404);
+        // $file = Repositories::where('sub_ff_of', $file_id)->get();
+        // $counter = 0;
+        // $filenames = "";
         // foreach ($file as $filepath) {
         //     $filePath = storage_path('app/' . $file->file_path);
         //     $counter++;
@@ -48,15 +57,15 @@ class StudentRepositories extends Component
 
         // }
 
-        for ($i = 0; $i < count($file); $i++) {
-            $filenames .= storage_path("app/" . $file[$i]->file_path);
-            if (File::exists($filenames)) {
+        // for ($i = 0; $i < count($file); $i++) {
+        //     $filenames .= storage_path("app/" . $file[$i]->file_path);
+        //     if (File::exists($filenames)) {
 
-                return response()->download($filenames, $file[$i]->ff_title);
-            }
-            // $filePath = storage_path('app/' . $file[$i]->file_path);
+        //         return response()->download($filenames, $file[$i]->ff_title);
+        //     }
+        //     // $filePath = storage_path('app/' . $file[$i]->file_path);
 
-        }
+        // }
 
 
 
